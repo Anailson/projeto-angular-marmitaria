@@ -5,7 +5,11 @@
         <hr>
         <p>A Lista vai aqui abaixo</p>
         <ul class="list-group">
-            <a class="list-group-item" style="cursor:pointer;"></a>
+            <a *ngFor="let food of foodList" 
+                class="list-group-item" 
+                style="cursor:pointer;">
+                 {{ food.name }} ({{ food.amout}})
+            </a>
         </ul>
     </div>
 </div>
